@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+    <input type="file" id="image" >
+    <button id="crop">Crop</button>
+    <button id="draw">Draw</button>
+    <div>
+        <select id="theme">
+            <option value="grayscale">Grayscale</option>
+            <option value="sepia">Sepia</option>
+            <option value="high">High Contrast</option>
+            <option value="blur">Blur</option>
+            <option vlaue="bright">Brightness</option>
+        </select>
+        <button id="color">Change Color</button>
+    </div>
+    <div>
+    <select id="degree">
+        <option value="30">30 Degrees</option>
+        <option value="60">60 Degrees</option>
+        <option value="90">90 Degrees</option>
+        <option value="120">120 Degrees</option>
+        <option value="150">150 Degress</option>
+        <option value="180">180 Degrees</option>
+        <option value="210">210 Degress</option>
+        <option value="270">270 Degrees</option>
+        <option value="360">Orginal</option>
+    </select>
+    <button id="rotate">Rotate</button>
+    </div>
+    </div>
+    <div class="canvas">
+    <canvas id="canvas" height="600px" width="1000px" style="background-color: rgb(25, 124, 210); margin-top: 40px; border-radius: 10px;" >
+
+    </canvas>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
